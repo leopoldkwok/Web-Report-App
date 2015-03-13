@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title>How to Build a Slider with jQuery</title>
+	<link href='css/bootstrap.min.css' rel='stylesheet'>
+	<link href='css/main.css' rel='stylesheet'>
+	
+</head>
+<body>
+
+
+
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Project Slider</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#Services">Services</a><li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+    <div class="container">
+      
+      <div class="row row-offcanvas row-offcanvas-left">
+        
+         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+           <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+          <div class="well sidebar-nav">
+            <ul class="nav">
+              <li>Sidebar</li>
+              <li class="active"><a href="#">Case Study 1</a></li>
+              <li><a href="#">Case Study 2</a></li>
+              <li><a href="#">Case Study 3</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-left visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle Nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Hello, People!</h1>
+            <p>This is an example to show how a slider is created from scratch.</p>
+          </div>
+          <div class="row">
+            
+          </div><!--/row-->
+        </div><!--/span-->
+
+        
+      </div><!--/row-->
+
+
+	<div id="slideshow">
+		<ul>
+			<li id="lambo1" class="active"><a href="#"><img src="images/lambo1.jpg" alt="Green Lamborghini" /></a></li>
+			<li id="lambo2"><a href="#"><img src="images/lambo2.jpg" alt="White Lamborghini" /></a><li>
+			<li id="lambo3"><a href="#"><img src="images/lambo3.jpg" alt="Grey Lamborghini" /></a></li>
+			<li id="lambo4"><a href="#"><img src="images/lambo4.jpg" alt="Green Lamborghini" /></a></li>
+			<li id="lambo5"><a href="#"><img src="images/lambo5.jpg" alt="Yellow Lamborghini" /></a></li>
+		</ul>
+	</div>
+
+    
+
+	<div id="slideshow-nav">
+		<ul>
+			<li><a class="dot1 active" >See the green Lamborghini</a></li>
+			<li><a class="dot2">See the white Lamborghini</a></li>
+			<li><a class="dot3">See the grey Lamborghini</a></li>
+			<li><a class="dot4">See the green Lamborghini</a></li>
+			<li><a class="dot5">See the yellow Lamborghini</a></li>
+		</ul>
+	</div>
+
+
+	<img src="http://annhowardesign.com/images/arrowleft.jpg" class="prev" alt="Previous"/> 
+
+  <img src="http://annhowardesign.com/images/arrowright.jpg" class="next" alt="Next"/> 
+
+    
+</div>
+
+      <hr>
+
+      <footer>
+        <br><br><p>© Company 2015</p>
+      </footer>
+
+    </div><!--/.container-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+<html>
